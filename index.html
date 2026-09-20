@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de Requisições</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Gerenciador de Requisições</h1>
+            <div>
+                <ul>
+                    <li>Total:</li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="dashboard-cards">
+            <div class="card-informations">
+                <p>PENDENTES</p>
+            </div>
+            <div class="card-informations">
+                <p>EM ANDAMENTO</p>
+            </div>
+            <div class="card-informations">
+                <p>CONCLUÍDOS / DADOS BAIXA</p>
+            </div>
+        </section>
+        <section id="label-add-req">
+            <div>
+                <h2>Adicionar Nova Requisição Interna</h2>
+                <form action="" method="post">
+                    <label for="number-req">N° DA REQUISIÇÃO</label>
+                    <input type="number" name="number-req" id="number-req">
+                    <label for="solicitante-name">SOLICITANTE</label>
+                    <input type="text" name="solicitante-setor" id="solicitante-setor">
+                    <label for="solicitante-setor">SETOR</label>
+                    <input type="text" name="solicitante-name" id="solicitante-name">
+                </form>
+            </div>
+        </section>
+        <section id="requisicoes-container">
+            <div id="search-filters">
+                <input type="search" name="search-field" id="search-field">
+                <div>
+                    <p>Filtrar</p>
+                    <button class="btn-filter active" data-status="todos">TODOS</button>
+                    <button class="btn-filter" data-status="pendentes">PENDENTES</button>
+                    <button class="btn-filter" data-status="pendentes">EM ANDMENTO</button>
+                    <button class="btn-filter" data-status="pendentes">CONCLUÍDOS</button>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>N° SAP</th>
+                                <th>SOLICITANTE</th>
+                                <th>SETOR</th>
+                                <th>STATUS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col-sap">4333127</td>
+                            </tr>
+                            <td>Thalyson Silva</td>
+                            <td>Recursos Humanos</td>
+                            <td>
+                                <span class="">• Pendente</span>
+                            </td>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>M. Dias Branco © 2026 - Painel de Gerenciamento de Requisições Internas</p>
+    </footer>
+</body>
+</html>
