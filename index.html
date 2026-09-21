@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerenciador de Requisições</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
     <header>
@@ -18,14 +23,32 @@
     </header>
     <main>
         <section id="dashboard-cards">
-            <div class="card-informations">
-                <p>PENDENTES</p>
+            <div class="card-status">
+                <div class="card-informations">
+                    <span>PENDENTES</span>
+                    <span class="activity-number">0</span>
+                </div>
+                <div class="card-icons status-pending">
+                    <span class="material-symbols-outlined">check_alert</span>
+                </div>
             </div>
-            <div class="card-informations">
-                <p>EM ANDAMENTO</p>
+            <div class="card-status">
+                <div class="card-informations">
+                    <span>EM ANDAMENTO</span>
+                    <span class="activity-number">0</span>
+                </div>
+                <div class="card-icons status-progress">
+                    <span class="material-symbols-outlined">pending_actions</span>
+                </div>
             </div>
-            <div class="card-informations">
-                <p>CONCLUÍDOS / DADOS BAIXA</p>
+            <div class="card-status">
+                <div class="card-informations">
+                    <span>CONCLUÍDOS / DADOS BAIXA</span>
+                    <span class="activity-number">0</span>
+                </div>
+                <div class="card-icons status-completed">
+                    <span class="material-symbols-outlined">check_circle</span>
+                </div>
             </div>
         </section>
         <section id="label-add-req">
