@@ -7,9 +7,11 @@
 :root {
   --principal-color: #0F4C81;
   --title-color: #1E293B;
-  --bg-color: #F1F5F9;
+  --bg-color: #F8FAFC;
   --bg-cards: #FFFFFF;
+  --text-cards: #64748B;
   --bg-search: #F8FAFC;
+  --border-color: #E2E8F0;
 
   --pending-text: #B45309;
   --bg-pending: #FEF3C7;
@@ -62,30 +64,42 @@ nav ul li {
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
+  width: 20rem;
+  height: 6rem;
   background-color: var(--bg-cards);
   padding: 1rem;
+  border: 1px solid var(--border-color);
   border-radius: 15px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 2px rgba(0, 0, 0, 0.03);
 }
 
 .card-informations {
   display: flex;
   flex-direction: column;
-  color: var(--bg-color);
+  color: var(--text-cards);
+  font-size: .8rem;
+  font-weight: bold;
+  gap: .3rem;
 }
 
 .card-icons {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
 }
 
-.status-pending {
+.status-pending, 
+#number-pending {
   color: var(--pending-text);
+  font-size: 1.2rem;
 }
-.status-progress {
+.status-progress,
+#number-progress {
   color: var(--progress-text);
+  font-size: 1.2rem;
 }
 
-.status-completed {
+.status-completed,
+#number-completed {
   color: var(--completed-text);
+  font-size: 1.2rem;
 }
