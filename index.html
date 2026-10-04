@@ -51,17 +51,36 @@
                 </div>
             </div>
         </section>
-        <section id="label-add-req">
-            <div>
-                <h2>Adicionar Nova Requisição Interna</h2>
-                <form action="" method="post">
-                    <label for="number-req">N° DA REQUISIÇÃO</label>
-                    <input type="number" name="number-req" id="number-req">
-                    <label for="solicitante-name">SOLICITANTE</label>
-                    <input type="text" name="solicitante-setor" id="solicitante-setor">
-                    <label for="solicitante-setor">SETOR</label>
-                    <input type="text" name="solicitante-name" id="solicitante-name">
-                </form>
+        <section class="form-container">
+            <div class="form-requisicoes">
+                <div id="title-form">
+                    <p>Nova Requisição Interna</p>
+                </div>
+                <div class="form-field">
+                    <form action="" method="post" class="form-grid">
+                        <div class="form-group">
+                            <label for="number-req">N° DA REQUISIÇÃO</label>
+                            <input type="number" name="number-req" id="number-req">
+                        </div>
+                        <div class="form-group">
+                            <label for="solicitante-name">SOLICITANTE</label>
+                            <input type="text" name="solicitante-setor" id="solicitante-setor">
+                        </div>
+                        <div class="form-group">
+                            <label for="solicitante-setor">SETOR</label>
+                            <input type="text" name="solicitante-name" id="solicitante-name">
+                        </div>
+                        <div class="form-group">
+                            <label for="status">STATUS INICIAL</label>
+                            <select id="status">
+                                <option value="pendente">Em Andamento</option>
+                                <option value="pendente">Pendente</option>
+                                <option value="pendente">Concluída</option>
+                            </select>
+                        </div>
+                        <input type="submit" value="CADASTRAR REQUISIÇÃO">
+                    </form>
+                </div>
             </div>
         </section>
         <section id="requisicoes-container">
